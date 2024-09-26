@@ -1,0 +1,24 @@
+{{ define "main" }}
+<content>
+  {{ .Content }}
+  <div class="mt-3 border border-1 p-3 pe-5">
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="c25a4251-6709-454b-9ad5-47310a824f0d">
+      <div class="mb-3">
+        <label for="inputName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="inputName" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="inputEmail" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="inputEmail" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="inputMessage" class="form-label">Message</label>
+        <textarea class="form-control" id="inputMessage" name="message" rows="3" required></textarea>
+      </div>
+      <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+      <button type="submit" class="btn btn-secondary">Submit</button>
+    </form>
+  </div>
+</content>
+{{ end }}

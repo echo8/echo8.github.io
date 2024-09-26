@@ -1,0 +1,14 @@
+title = 'echo8'
+baseURL = 'https://www.echo8.dev/'
+theme = 'hugo-bearcub'
+copyright = "© 2024 echo8"
+defaultContentLanguage = "en"
+
+[languages]
+  [languages.en]
+    title = "echo8"
+    languageName = "en-US"
+    LanguageCode = "en-US"
+    contentDir = "content"
+#    [languages.en.params]
+#      madeWith = ""
