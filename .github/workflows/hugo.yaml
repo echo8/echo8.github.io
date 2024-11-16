@@ -71,7 +71,7 @@ jobs:
         run: |
           make -C krp/docs install build \
           && mkdir public/krp \
-          && cp krp/docs/build/* public/krp/
+          && cp -r krp/docs/build/* public/krp/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
