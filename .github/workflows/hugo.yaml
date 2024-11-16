@@ -69,7 +69,7 @@ jobs:
             docs
       - name: Build KRP docs
         run: |
-          make -C krp/docs build \
+          make -C krp/docs install build \
           && mkdir public/krp \
           && cp krp/docs/build/* public/krp/
       - name: Upload artifact
